@@ -41,6 +41,6 @@ the keyboard functionality could be invoked with the shorter macro call:
 ```
     @keyboard
 ```
-But I can't manage to get the right syntax to call these macros from my keybaord macro. 
+But I can't manage to get the right syntax to call these macros from my keyboard macro. 
 If you know how to do this, please help ...
 
