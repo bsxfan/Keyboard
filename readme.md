@@ -8,8 +8,9 @@ It requires Julia 1.1.
 
 Usage:
 ```
-using Keyboard
-import Base.@locals
+using Revise          # recommended, helps to be able to run updated code without restarting REPL
+using Keyboard        # this package
+import Base.@locals   # required --- available since Julia 1.1
 
 
 function somefunction(a,b)
@@ -31,3 +32,15 @@ and line number from where `keyboard` was invoked. You can type local variable n
 at the prompt to have them displayed. 
 
 When you want to continue running, just hit enter.
+
+# Can we do this as a macro?
+
+I tried to create a macro with the same capability. The idea was that `@locals`,
+`@__FILE__` and `@__LINE__` could be invoked from inside the macro definition, so that
+the keyboard functionality could be invoked with the shorther macro call:
+```
+    @keyboard
+```
+But I can't manage to get the right syntax to call these macros from my keybaord macro. 
+If you know how to do this, please help ...
+
