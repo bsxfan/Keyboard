@@ -7,8 +7,7 @@ variables in a running Julia program.
 It requires Julia 1.1.
 
 Usage:
-'''
-
+```
 using Keyboard
 import Base.@locals
 
@@ -24,12 +23,11 @@ function somefunction(a,b)
     keyboard(@locals,@__FILE__,@__LINE__)
 
 end
+```
 
-'''
 
 If things are working properly, you should see a message displaying the source file
 and line number from where `keyboard` was invoked. You can type local variable names
 at the prompt to have them displayed. 
 
 When you want to continue running, just hit enter.
- 
