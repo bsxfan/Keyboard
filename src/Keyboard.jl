@@ -37,7 +37,8 @@ function test_keyboard()
     sannie = 3
     keyboard(@locals,@__FILE__,@__LINE__)
 
-
+    jack = 7
+    keyboard(@locals,@__FILE__,@__LINE__)
 
 end
 
