@@ -27,7 +27,7 @@ function keyboard(dict,file,line)
 end
 
 macro keyboard()
-    return :(keyboard(@locals,QuoteNode(__source__).file,QuoteNode(__source__).line))
+    return :(keyboard(@locals,"dummy",42)
 end
 
 
