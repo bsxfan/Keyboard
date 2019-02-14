@@ -26,7 +26,9 @@ function keyboard(dict,file,line)
     end
 end
 
-
+macro keyboard()
+    return :(keyboard(@locals,@__FILE__,@__LINE__))
+end
 
 
 
@@ -38,7 +40,8 @@ function test_keyboard()
     keyboard(@locals,@__FILE__,@__LINE__)
 
     jack = 7
-    keyboard(@locals,@__FILE__,@__LINE__)
+    #keyboard(@locals,@__FILE__,@__LINE__)
+    @keyboard
 
 end
 
