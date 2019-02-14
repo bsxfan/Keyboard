@@ -37,7 +37,7 @@ When you want to continue running, just hit enter.
 
 I tried to create a macro with the same capability. The idea was that `@locals`,
 `@__FILE__` and `@__LINE__` could be invoked from inside the macro definition, so that
-the keyboard functionality could be invoked with the shorther macro call:
+the keyboard functionality could be invoked with the shorter macro call:
 ```
     @keyboard
 ```
