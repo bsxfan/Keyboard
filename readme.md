@@ -33,7 +33,7 @@ at the prompt to have them displayed.
 
 When you want to continue running, just hit enter.
 
-# Can we do this as a macro?
+## Can we do this as a macro?
 
 I tried to create a macro with the same capability. The idea was that `@locals`,
 `@__FILE__` and `@__LINE__` could be invoked from inside the macro definition, so that
