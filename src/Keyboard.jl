@@ -27,7 +27,7 @@ function keyboard(dict,file,line)
 end
 
 macro keyboard()
-    return :(keyboard(@locals,@__FILE__,@__LINE__))
+    return :(keyboard(@locals,__source__.file,__source__.line))
 end
 
 
